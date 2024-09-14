@@ -1,0 +1,111 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Testdc - Win32 ReleaseDLL--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x410 /fo"ReleaseDLL/Testdc.res" /i "C:\c\wx\include" /d "_DEBUG" "C:\c\Kwx-shared\kwxIndControlSource-0.2.0\Testdc.rc"" 
+Creating temporary file "C:\DOCUME~1\koan\IMPOST~1\Temp\RSP896.tmp" with contents
+[
+/nologo /MD /W4 /GX /O2 /I "C:\c\wx\lib\mswdll\\" /D "WIN32" /D "__WXMSW__" /D "WXUSINGDLL" /D "_WINDOWS" /D "NOPCH" /Fp"ReleaseDLL/Testdc.pch" /Yu"kprec.h" /Fo"ReleaseDLL/" /Fd"ReleaseDLL/" /FD /c 
+"C:\c\Kwx-shared\kwxIndControlSource-0.2.0\AngularMeter.cpp"
+"C:\c\Kwx-shared\kwxIndControlSource-0.2.0\AngularRegulator.cpp"
+"C:\c\Kwx-shared\kwxIndControlSource-0.2.0\BmpCheckBox.cpp"
+"C:\c\Kwx-shared\kwxIndControlSource-0.2.0\BmpSwitcher.cpp"
+"C:\c\Kwx-shared\kwxIndControlSource-0.2.0\LCDClock.cpp"
+"C:\c\Kwx-shared\kwxIndControlSource-0.2.0\LCDWindow.cpp"
+"C:\c\Kwx-shared\kwxIndControlSource-0.2.0\LinearMeter.cpp"
+"C:\c\Kwx-shared\kwxIndControlSource-0.2.0\LinearRegulator.cpp"
+"C:\c\Kwx-shared\kwxIndControlSource-0.2.0\TestdcApp.cpp"
+"C:\c\Kwx-shared\kwxIndControlSource-0.2.0\TestdcFrm.cpp"
+"C:\c\Kwx-shared\kwxIndControlSource-0.2.0\TimeAlarm.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\koan\IMPOST~1\Temp\RSP896.tmp" 
+Creating temporary file "C:\DOCUME~1\koan\IMPOST~1\Temp\RSP897.tmp" with contents
+[
+/nologo /MD /W4 /GX /O2 /I "C:\c\wx\lib\mswdll\\" /D "WIN32" /D "__WXMSW__" /D "WXUSINGDLL" /D "_WINDOWS" /D "NOPCH" /Fp"ReleaseDLL/Testdc.pch" /Yc"kprec.h" /Fo"ReleaseDLL/" /Fd"ReleaseDLL/" /FD /c 
+"C:\c\Kwx-shared\kwxIndControlSource-0.2.0\wxprec.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\koan\IMPOST~1\Temp\RSP897.tmp" 
+Creating temporary file "C:\DOCUME~1\koan\IMPOST~1\Temp\RSP898.tmp" with contents
+[
+wxmsw26_core.lib wxbase26.lib wxtiff.lib wxjpeg.lib wxpng.lib wxzlib.lib wxregex.lib wxexpat.lib kernel32.lib user32.lib gdi32.lib comdlg32.lib winspool.lib winmm.lib shell32.lib comctl32.lib ole32.lib oleaut32.lib uuid.lib rpcrt4.lib advapi32.lib wsock32.lib odbc32.lib /nologo /subsystem:windows /incremental:no /pdb:"ReleaseDLL/Testdc.pdb" /debug /machine:I386 /nodefaultlib:"libc.lib" /nodefaultlib:"libci.lib" /out:"ReleaseDLL/Testdc.exe" /pdbtype:sept 
+".\ReleaseDLL\AngularMeter.obj"
+".\ReleaseDLL\AngularRegulator.obj"
+".\ReleaseDLL\BmpCheckBox.obj"
+".\ReleaseDLL\BmpSwitcher.obj"
+".\ReleaseDLL\LCDClock.obj"
+".\ReleaseDLL\LCDWindow.obj"
+".\ReleaseDLL\LinearMeter.obj"
+".\ReleaseDLL\LinearRegulator.obj"
+".\ReleaseDLL\TestdcApp.obj"
+".\ReleaseDLL\TestdcFrm.obj"
+".\ReleaseDLL\TimeAlarm.obj"
+".\ReleaseDLL\wxprec.obj"
+".\ReleaseDLL\Testdc.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\koan\IMPOST~1\Temp\RSP898.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+wxprec.cpp
+Compiling...
+AngularMeter.cpp
+C:\c\Kwx-shared\kwxIndControlSource-0.2.0\AngularMeter.h(42) : warning C4100: 'event' : unreferenced formal parameter
+C:\c\Kwx-shared\kwxIndControlSource-0.2.0\AngularMeter.cpp(40) : warning C4100: 'style' : unreferenced formal parameter
+C:\c\Kwx-shared\kwxIndControlSource-0.2.0\AngularMeter.cpp(37) : warning C4100: 'label' : unreferenced formal parameter
+C:\c\Kwx-shared\kwxIndControlSource-0.2.0\AngularMeter.cpp(114) : warning C4100: 'event' : unreferenced formal parameter
+AngularRegulator.cpp
+C:\c\Kwx-shared\kwxIndControlSource-0.2.0\AngularRegulator.h(66) : warning C4100: 'event' : unreferenced formal parameter
+C:\c\Kwx-shared\kwxIndControlSource-0.2.0\AngularRegulator.cpp(35) : warning C4100: 'label' : unreferenced formal parameter
+C:\c\Kwx-shared\kwxIndControlSource-0.2.0\AngularRegulator.cpp(77) : warning C4100: 'event' : unreferenced formal parameter
+BmpCheckBox.cpp
+C:\c\Kwx-shared\kwxIndControlSource-0.2.0\BmpCheckBox.h(63) : warning C4100: 'event' : unreferenced formal parameter
+C:\c\Kwx-shared\kwxIndControlSource-0.2.0\BmpCheckBox.cpp(45) : warning C4100: 'label' : unreferenced formal parameter
+C:\c\Kwx-shared\kwxIndControlSource-0.2.0\BmpCheckBox.cpp(102) : warning C4100: 'event' : unreferenced formal parameter
+BmpSwitcher.cpp
+C:\c\Kwx-shared\kwxIndControlSource-0.2.0\BmpSwitcher.h(44) : warning C4100: 'event' : unreferenced formal parameter
+C:\c\Kwx-shared\kwxIndControlSource-0.2.0\BmpSwitcher.cpp(54) : warning C4100: 'style' : unreferenced formal parameter
+C:\c\Kwx-shared\kwxIndControlSource-0.2.0\BmpSwitcher.cpp(51) : warning C4100: 'label' : unreferenced formal parameter
+C:\c\Kwx-shared\kwxIndControlSource-0.2.0\BmpSwitcher.cpp(89) : warning C4100: 'event' : unreferenced formal parameter
+LCDClock.cpp
+C:\c\Kwx-shared\kwxIndControlSource-0.2.0\LCDClock.cpp(57) : warning C4100: 'event' : unreferenced formal parameter
+LCDWindow.cpp
+C:\c\Kwx-shared\kwxIndControlSource-0.2.0\LCDWindow.cpp(62) : warning C4100: 'event' : unreferenced formal parameter
+C:\c\Kwx-shared\kwxIndControlSource-0.2.0\LCDWindow.cpp(351) : warning C4100: 'digit' : unreferenced formal parameter
+LinearMeter.cpp
+C:\c\Kwx-shared\kwxIndControlSource-0.2.0\LinearMeter.h(60) : warning C4100: 'event' : unreferenced formal parameter
+C:\c\Kwx-shared\kwxIndControlSource-0.2.0\LinearMeter.cpp(40) : warning C4100: 'style' : unreferenced formal parameter
+C:\c\Kwx-shared\kwxIndControlSource-0.2.0\LinearMeter.cpp(37) : warning C4100: 'label' : unreferenced formal parameter
+C:\c\Kwx-shared\kwxIndControlSource-0.2.0\LinearMeter.cpp(102) : warning C4100: 'event' : unreferenced formal parameter
+LinearRegulator.cpp
+C:\c\Kwx-shared\kwxIndControlSource-0.2.0\LinearRegulator.h(61) : warning C4100: 'event' : unreferenced formal parameter
+C:\c\Kwx-shared\kwxIndControlSource-0.2.0\LinearRegulator.cpp(31) : warning C4100: 'label' : unreferenced formal parameter
+C:\c\Kwx-shared\kwxIndControlSource-0.2.0\LinearRegulator.cpp(74) : warning C4100: 'event' : unreferenced formal parameter
+TestdcApp.cpp
+TestdcFrm.cpp
+C:\c\Kwx-shared\kwxIndControlSource-0.2.0\BmpCheckBox.h(63) : warning C4100: 'event' : unreferenced formal parameter
+C:\c\Kwx-shared\kwxIndControlSource-0.2.0\AngularMeter.h(42) : warning C4100: 'event' : unreferenced formal parameter
+C:\c\Kwx-shared\kwxIndControlSource-0.2.0\LinearMeter.h(60) : warning C4100: 'event' : unreferenced formal parameter
+C:\c\Kwx-shared\kwxIndControlSource-0.2.0\BmpSwitcher.h(44) : warning C4100: 'event' : unreferenced formal parameter
+C:\c\Kwx-shared\kwxIndControlSource-0.2.0\LinearRegulator.h(61) : warning C4100: 'event' : unreferenced formal parameter
+C:\c\Kwx-shared\kwxIndControlSource-0.2.0\AngularRegulator.h(66) : warning C4100: 'event' : unreferenced formal parameter
+C:\c\Kwx-shared\kwxIndControlSource-0.2.0\TestdcFrm.cpp(145) : warning C4100: 'event' : unreferenced formal parameter
+C:\c\Kwx-shared\kwxIndControlSource-0.2.0\TestdcFrm.cpp(151) : warning C4100: 'event' : unreferenced formal parameter
+C:\c\Kwx-shared\kwxIndControlSource-0.2.0\TestdcFrm.cpp(174) : warning C4100: 'event' : unreferenced formal parameter
+C:\c\Kwx-shared\kwxIndControlSource-0.2.0\TestdcFrm.cpp(188) : warning C4100: 'event' : unreferenced formal parameter
+C:\c\Kwx-shared\kwxIndControlSource-0.2.0\TestdcFrm.cpp(197) : warning C4100: 'event' : unreferenced formal parameter
+C:\c\Kwx-shared\kwxIndControlSource-0.2.0\TestdcFrm.cpp(204) : warning C4100: 'event' : unreferenced formal parameter
+TimeAlarm.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+Testdc.exe - 0 error(s), 36 warning(s)
+</pre>
+</body>
+</html>

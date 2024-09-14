@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Testdc" />
+		<Option platforms="Windows;" />
+		<Option makefile="makefile" />
+		<Option pch_mode="0" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Release">
+				<Option platforms="Windows;" />
+				<Option output=".\Release\Testdc" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Release" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-Wall" />
+					<Add directory="$(#wx.lib)\gcc_dll$(WX_CFG)\msw$(WX_SUFFIX)" />
+					<Add directory="$(#wx.include)" />
+					<Add directory="$(#wx)\contrib\include" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="$(#wx.include)" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="wxmsw28$(WX_SUFFIX)" />
+					<Add directory="$(#wx.lib)\gcc_dll$(WX_CFG)" />
+					<Add directory="$(#wx)\contrib\lib" />
+				</Linker>
+			</Target>
+			<Target title="Debug">
+				<Option platforms="Windows;" />
+				<Option output=".\Debug\Testdc" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Debug" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add option="-D__WXDEBUG__" />
+					<Add directory="$(#wx.lib)\gcc_dll$(WX_CFG)\msw$(WX_SUFFIX)d" />
+					<Add directory="$(#wx.include)" />
+					<Add directory="$(#wx)\contrib\include" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="$(#wx.include)" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="wxmsw28$(WX_SUFFIX)d" />
+					<Add directory="$(#wx.lib)\gcc_dll$(WX_CFG)" />
+					<Add directory="$(#wx)\contrib\lib" />
+				</Linker>
+			</Target>
+			<Environment>
+				<Variable name="WX_SUFFIX" value="u" />
+				<Variable name="WX_CFG" value="" />
+			</Environment>
+		</Build>
+		<Compiler>
+			<Add option="-pipe" />
+			<Add option="-mthreads" />
+			<Add option="-fexceptions" />
+			<Add option='[[if (PLATFORM == PLATFORM_MSW &amp;&amp; (GetCompilerFactory().GetCompilerVersionString(_T(&quot;gcc&quot;)) &gt;= _T(&quot;4.0.0&quot;))) print(_T(&quot;-Wno-attributes&quot;));]]' />
+			<Add option="-Winvalid-pch" />
+			<Add option="-include wx_pch.h" />
+			<Add option="-DHAVE_W32API_H" />
+			<Add option="-D__WXMSW__" />
+			<Add option="-DWXUSINGDLL" />
+			<Add option="-DwxUSE_UNICODE" />
+			<Add option="-DWX_PRECOMP" />
+		</Compiler>
+		<Unit filename="AngularMeter.cpp" />
+		<Unit filename="AngularMeter.h" />
+		<Unit filename="AngularRegulator.cpp" />
+		<Unit filename="AngularRegulator.h" />
+		<Unit filename="BmpCheckBox.cpp" />
+		<Unit filename="BmpCheckBox.h" />
+		<Unit filename="BmpSwitcher.cpp" />
+		<Unit filename="BmpSwitcher.h" />
+		<Unit filename="CHANGES" />
+		<Unit filename="KWIC-LICENSE" />
+		<Unit filename="LCDClock.cpp" />
+		<Unit filename="LCDClock.h" />
+		<Unit filename="LCDWindow.cpp" />
+		<Unit filename="LCDWindow.h" />
+		<Unit filename="LinearMeter.cpp" />
+		<Unit filename="LinearMeter.h" />
+		<Unit filename="LinearRegulator.cpp" />
+		<Unit filename="LinearRegulator.h" />
+		<Unit filename="Testdc.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="TestdcApp.cpp" />
+		<Unit filename="TestdcApp.h" />
+		<Unit filename="TestdcFrm.cpp" />
+		<Unit filename="TestdcFrm.h" />
+		<Unit filename="TimeAlarm.cpp" />
+		<Unit filename="TimeAlarm.h" />
+		<Unit filename="makefile">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="makefile.gtk">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="makefile.mtf">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="res\Testdc.ico" />
+		<Unit filename="res\Testdc.xpm" />
+		<Unit filename="res\Testdc32x32.xpm" />
+		<Unit filename="res\but.xpm" />
+		<Unit filename="res\exefile.xpm" />
+		<Unit filename="res\help.bmp" />
+		<Unit filename="res\ohsmile.xpm" />
+		<Unit filename="res\sadsmile.xpm" />
+		<Unit filename="res\smile.xpm" />
+		<Unit filename="wx\msw\blank.cur" />
+		<Unit filename="wx\msw\bullseye.cur" />
+		<Unit filename="wx\msw\cdrom.ico" />
+		<Unit filename="wx\msw\computer.ico" />
+		<Unit filename="wx\msw\drive.ico" />
+		<Unit filename="wx\msw\file1.ico" />
+		<Unit filename="wx\msw\floppy.ico" />
+		<Unit filename="wx\msw\folder1.ico" />
+		<Unit filename="wx\msw\folder2.ico" />
+		<Unit filename="wx\msw\hand.cur" />
+		<Unit filename="wx\msw\magnif1.cur" />
+		<Unit filename="wx\msw\noentry.cur" />
+		<Unit filename="wx\msw\pbrush.cur" />
+		<Unit filename="wx\msw\pencil.cur" />
+		<Unit filename="wx\msw\pntleft.cur" />
+		<Unit filename="wx\msw\pntright.cur" />
+		<Unit filename="wx\msw\query.cur" />
+		<Unit filename="wx\msw\removble.ico" />
+		<Unit filename="wx\msw\rightarr.cur" />
+		<Unit filename="wx\msw\roller.cur" />
+		<Unit filename="wx\msw\size.cur" />
+		<Unit filename="wx\msw\watch1.cur" />
+		<Unit filename="wx_pch.h">
+			<Option compile="1" />
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="wxprec.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
